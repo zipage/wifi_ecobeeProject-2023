@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: rgb(0, 0, 70);
+    /* removes the scroll bar that shows in general but specific the right contents */
+    overflow-y: hidden;
+    direction: ltr;
+}
+
+/*
+html {
+    scroll-behavior: smooth;
+}
+*/
+
+p {
+    color: rgb(156, 156, 156);
+    direction: ltr;
+}
+
+li {
+    list-style-type: circle;
+    direction: ltr;
+}
+
+h1,
+h2,
+.titles {
+    color: rgb(0, 0, 70);
+    ;
+}
+
+.container {
+    margin-top: -90px;
+}
+
+/* h3 is the specific content that dropdown terms */
+h3 {
+    /*border-bottom: 1px solid black;*/
+    width: 60%;
+    /* creates space of Wi-Fi Terms" and the border-bottom */
+    line-height: 1;
+}
+
+
+/* LEFT CONTENT */
+
+.titles {
+    border-left: none;
+    color: rgb(0, 0, 70);
+    /* creates space between the details class="titles" */
+    margin-top: -10px;
+}
+
+
+summary {
+    color: rgb(60, 60, 254);
+}
+
+.terms_floatLeft {
+    width: 45%;
+    height: 50%;
+    float: left;
+    margin-left: 20px;
+    /* creates space and pushes terms more to the left away from the scroll bar */
+    padding-left: 20px;
+    display: block;
+    /* adjusts to move this div higher to be inline with the floatLeft content */
+    margin-top: 70px;
+    /* ===prevents the left side from moving the right side inwards onclick of terms -- "fixed"
+        allows user to scroll if need by but other wise it kinda acts like a fixed position=== */
+
+    /* position: abosolute allows me to have left content to scroll as needed while acting sticky */
+    position: absolute;
+    /* has a scroll bar for the left content */
+    overflow: scroll;
+    /* hides horizontal scroll bar */
+    overflow-x: hidden;
+    /* moves the actual scroll bar to the left of the div's content */
+    direction: rtl;
+    /* moves the actual terms to the left as i placed the direction: rtl */
+    text-align: left;
+}
+
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/* changes scroll bar effect on hover to mimic as if it was onclick */
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+details {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding: 0px;
+    /* literal line spacing but between specific text within */
+    line-height: 1.2;
+}
+
+summary {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.8;
+    list-style-type: none;
+}
+
+
+/* RIGHT CONTENT */
+
+.content_floatRight {
+    width: 54%;
+    height: 69%;
+    float: right;
+    /* space between the left and right div's inbetween */
+    margin-left: 44%;
+    /* adjusts to move this div higher to be inline with the floatLeft content */
+    margin-top: px;
+    /* centre's the title and <p> of the right content */
+    text-align: center;
+    display: block;
+    /* prevents .content_floatRight from moving with .terms_floatLeft content is clicked */
+    position: absolute;
+}
+
+.forms {
+    display: block;
+    text-align: center;
+    /* centre's the forms btns with full (?) div sizing width */
+    margin-right: 0px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+}
+
+#section-2 {
+    background-color: green;
+}

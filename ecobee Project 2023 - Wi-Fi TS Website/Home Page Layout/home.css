@@ -1,0 +1,156 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* CSS for devices with width less than 600px */
+@media screen and (max-width: 600px) {
+    .content-title {
+        width: 100%;
+    }
+}
+
+/* CSS for devices with width greater than or equal to 600px */
+@media screen and (min-width: 600px) {
+    .content-title {
+        width: 50%;
+    }
+}
+
+/* NAVIGATION CONTENT */
+ul {
+    /* removed the bullet */
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: #144745;
+}
+
+.navRight-home {
+    float: left;
+    margin-top: -45px;
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.navRight-FAQ {
+    float: left;
+    margin-top: -45px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#logo-left {
+    margin: 0px;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+/* 
+--- CONTENT MAIN:
+margin: 15px;
+padding: 25px; 
+border-radius: 35px;
+this will be for each of the flex boxes to repeate ---
+*/
+
+
+
+.content-title {
+    background-color: #144745;
+    color: white;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 35px;
+    width: 53.5%;
+}
+
+/* dictionary icon and content button */
+.content-title_text {
+    background: whitesmoke;
+    color: black;
+    margin: 30px;
+    padding: 0px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+#wifiTerms {
+    margin-left: 0px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #144745;
+}
+
+/* title text image of ecobee */
+.content-title-img {
+    float: right;
+    margin-top: -48%;
+    margin-right: -10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 85px 35px 35px 85px;
+}
+
+/* probing questions content */
+.content_probingQs {
+    background-color: #C7DBF4;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 35px;
+    width: 35%;
+    float: right;
+    margin-top: -39.5%;
+    margin-right: 1.2%;
+    color: #144745;
+}
+
+/* basic troubleshooting content */
+.content_basicTS {
+    background-color: #F2DBD1;
+    margin: 5px;
+    padding: 11px;
+    border-radius: 35px;
+    width: 11.5%;
+    float: right;
+    margin-top: -21.3%;
+    margin-right: 27%;
+    color: #144745;
+}
+
+/* common scenarios content */
+.content_commScenarios {
+    background-color: #0D6B5C;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 35px;
+    width: 23%;
+    float: right;
+    margin-top: -21.3%;
+    margin-right: 1.7%;
+    color: white;
+    line-height: 1.4;
+}
+
+.content_helpFlows {
+    background-color: #0E4B77;
+    color: #C7DBF4;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 35px 35px 35px 35px;
+    font-size: 16px;
+    width: 38%;
+    text-align: center;
+    float: right;
+    margin-top: -6.6%;
+    margin-right: 2.5%
+}
+
+/* flow chart "quiz esk" click Q and create what i need */

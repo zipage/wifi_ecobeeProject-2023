@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Terms Layout Example/styles.css">
+    <script type="text/javascript" src="/scripts.js"></script>
+    <title>W-Fi </title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; margin-bottom: 50px;">Welcome to All Things Wi-Fi</h1>
+    <!-- padding: 10px; creates space between the border-bottom and the "dictionary" -->
+    <h1 style="margin-left: 50px; padding: 10px; border-bottom: 1px solid rgb(156, 156, 156); width: 25%;">
+        <h>Dictionary
+    </h1>
+
+
+    <!-- ******************************************************************************** -->
+
+    <!-- Wi-Fi Terminology -->
+    <div class="container">
+        <!-- ******* ALL CONTENT FLOAT LEFT *******-->
+        <div class="terms_floatLeft">
+            <!-- <h2> This is a guide to help you understand what the Wi-Fi terminology and results of tests mean.</h2> -->
+
+            <details class="titles">
+                <summary>
+                    <h1>wi-fi terminology</h1>
+                </summary>
+
+                <!-- MAC Addy -->
+                <details class>
+                    <summary><i>MAC Address</i></summary>
+                    <p>Stands for Media Access Controller (Address). It is a unique identifier: every
+                        network-enabled
+                        device has a different MAC address</p>
+                    <li style="list-style-type: circle;">The first three pairs of digits represent the manufacturer;
+                        ecobee uses 44:61:32</li>
+                    <li style="list-style-type: circle;">MAC address = Social Insurance Number</li>
+                </details>
+
+                <!-- SSID -->
+                <details>
+                    <summary><i>SSID (Service Set Identifier)</i></summary>
+                    <p>Many of these problems come from users trying to connect to the wrong network. You can verify
+                        the
+                        correct
+                        SSID by
+                        checking the user's other devices (smartphones, etc) - though these may only have a 5GHz
+                        network
+                        configured.
+                        You
+                        can also provide instructions to login to the router and find it that way, under the
+                        router's
+                        2.4GHz
+                        wireless
+                        configuration. We'll need the manual for that.</p>
+                    <li style="list-style-type: circle;">"network name" - multiple access points can share the same
+                        SSID, devices will generally try to
+                        connect
+                        to
+                        the
+                        one with the best signal strength</li>
+                    <li style="list-style-type: circle;">must match the router's configured name for 2.4GHz channel
+                    </li>
+                    <li style="list-style-type: circle;">special characters may cause the stat to time out when
+                        connecting</li>
+                    <li style="list-style-type: circle;">ensure user is connecting to the correct SSID</li>
+
+                    <!-- could write button as "SSID - Wikipedia"...-->
+                    <button><a href="https://en.wikipedia.org/wiki/Service_set_(802.11_network)">Learn
+                            More</a></button>
+                </details>
+
+                <!-- IP Address -->
+                <details>
+                    <summary><i>IP Address</i></summary>
+                    <li>Used to identify each connected machine on the network</li>
+                    <li>Must be valid private IP address</li>
+                    <li>Unique within a given local network</li>
+                    <li>Automatically assigned by DHCP (Dynamic Host Configuration Protocol) after associating with
+                        the
+                        access
+                        point or manually configured</li>
+                    <li>169.x.x.x means the stat sent a DHCP request and did not get any response</li>
+                </details>
+
+                <!-- Subnet Mask -->
+                <details>
+                    <summary><i>Subnet Mask</i></summary>
+                    <p>Defines a network within another network (advanced)</p>
+                    <li>It will most often be 255.255.255.0 for residential networks</li>
+                </details>
+
+                <!-- Gateway-->
+                <details>
+                    <summary><i>Gateway</i></summary>
+                    <p>The IP address of the device that connects the LAN to the internet (router)</p>
+                    <li>It will most often be 192.168.0.1 or 10.0.0.1 for residential networks</li>
+                </details>
+
+                <!-- DNS-->
+                <details>
+                    <summary><i>DNS</i></summary>
+                    <p>Used to translate URLs (https://www.ecobee.com/) to an IP address (216.220.52.140)</p>
+                    <li>It will most often be the same as the gateway, but we can use alternatives such as 8.8.8.8
+                        (Google’s DNS)</li>
+                </details>
+
+                <!-- Signal Strength -->
+                <details>
+                    <summary><i>Signal Strength</i></summary>
+                    <p>Quality of the radio signal between the ecobee and the access point. 2.4 GHz networks usually
+                        have a better range than 5 GHz. Good signal strength does not indicate good internet
+                        connectivity.</p>
+                    <p>Good signal strength does not indicate good internet connectivity</p>
+                    <li>The thermostat will not connect</li>
+                    <li>Frequent disconnections w/ automatic reconnect</li>
+                    <li>Remote commands (app, portal, APIs) are not reflected on the thermostat</li>
+                    <li>Problems with Alexa and Spotify streaming</li>
+                    <p>A general guideline for good signal strength is >75%</p>
+                </details>
+            </details>
+
+            <!-- GENERAL TERMINOLOGY -->
+            <details class="titles">
+                <summary>
+                    <h1>general terminology</h1>
+                </summary>
+
+                <!-- LAN -->
+                <details>
+                    <summary><i>Local Area Network (LAN)</i></summary>
+                    <p>Local area network is an interconnected network of WiFi devices; like residences, schools,
+                        etc.
+                    </p>
+                    <li>Devices within a single, limited space</li>
+                    <li>Devices include and are not limited to computers, smartphones, laptops, etc.</li>
+                </details>
+
+
+                <!-- Dynamic IP -->
+                <details>
+                    <summary><i>Dynamic IP</i></summary>
+                    <p>The router assigns (“leases”) IP addresses to clients. After some time, the DHCP lease times
+                        out,
+                        and the IP address changes</p>
+                    <li>Most common network configuration (plug-and-play)</li>
+                </details>
+
+                <!-- Static IP -->
+                <details>
+                    <summary><i>Static IP</i></summary>
+                    <p>The user assigns a fixed IP address to a client on the network. Usually used for printers,
+                        displays, certain security cameras, and other devices that need to be accessed by many
+                        computers
+                        on the same network</p>
+                    <li>Not normally used on residential networks (requires some IT knowledge)</li>
+                </details>
+
+                <!-- Frequency / Frequency Band-->
+                <details class>
+                    <summary><i>Frequency / Frequency Band</i></summary>
+                    <p>Wi-Fi can operate at two different frequency bands:</p>
+                    <li>2.4 GHz; or</li>
+                    <li>5 GHz</li>
+                    <p>Radio signals have a frequency -- e.g. different radio stations have different frequencies
+                    </p>
+                    <p>Frequency bands are further subdivided in channels:</p>
+                    <li>2.4 GHz: channels 1 to 12</li>
+                    <li>5 GHz: channels 32 to 165</li>
+                    <p>The ecobee can automatically detect the channel – always select “Any Channel”</p>
+                </details>
+
+                <!-- Encryption Type -->
+                <details>
+                    <summary><i>Encryption Type</i></summary>
+                    <p>There are many types of encryption types and protocols -- e.g. WEP, WPA+TKIP, WPA+AES/CCMP,
+                        WPA2+AES/CCMP. Some networks support more than one encryption type: as long as WPA2+CCMP is
+                        available the ecobee will connect</p>
+                    <li>The ecobee only works reliably with WPA2+CCMP encryption type</li>
+                    <li>CCMP is also called AES</li>
+                </details>
+
+                <!-- Splash Pages -->
+                <details>
+                    <summary><i>Splash Pages</i></summary>
+                    <p>Some networks will require additional login information. Very common with guest and communal
+                        networks (condos, building apartments).</p>
+                    <li>The ecobee does not have the interface to display the splash page</li>
+                    <p>The ecobee’s MAC address will have to be manually added to the network (usually by the
+                        network
+                        admin).</p>
+                </details>
+
+                <!-- Ping -->
+                <details>
+                    <summary><i>Ping</i></summary>
+                    <p>Pinging is a utility used to check if an element or portion of the network is reachable. We
+                        send
+                        a
+                        small packet of data to a device/server (ping). If we receive the packet back (echo), it
+                        means
+                        that the device/server is reachable</p>
+                    <li>Ping Gateway: pings the router: Checks connectivity to the LAN</li>
+                    <li>Ping ecobee.com: pings our server: Checks connectivity to the Internet</li>
+                    <li>Ping Address: lets you ping a specific IP address</li>
+                </details>
+
+            </details>
+
+
+            <!-- EQUIPMENT -->
+            <details class="titles">
+                <summary>
+                    <h1>equipment</h1>
+                </summary>
+
+                <!-- Modem -->
+                <details>
+                    <summary><i>Modem</i></summary>
+                    <p>Converts electrical signals from the ISP to digital signals for computers.</p>
+                </details>
+
+                <!-- Router -->
+                <details>
+                    <summary><i>Router</i></summary>
+                    <p>Acts as a “hub” for the network, allowing clients to communicate with eachother. It also
+                        connects
+                        the LAN to other LANs, or to the Internet.</p>
+                    <li>Residential routers are usually multiple devices in one (Router + Access Point + Modem +
+                        Switch,
+                        etc.)</li>
+                </details>
+
+                <!-- (Wireless) Access Point -->
+                <details>
+                    <summary><i>(Wireless) Access Point</i></summary>
+                    <p>Creates a Wi-Fi network, broadcasting an SSID.</p>
+                </details>
+
+                <!-- Extender (or repeater) -->
+                <details>
+                    <summary><i>Extender (or repeater)</i></summary>
+                    <p>Captures a preexisting Wi-Fi signal and recreates it, to increase its reach. Extender needs
+                        to be
+                        placed in an area with good signal strength.</p>
+                    <p>Extenders will broadcast a new signal, which might have the same SSID as the main network or
+                        not
+                        -- We want extenders to have a different SSID.</p>
+                    <li>In that case, “EXT” or something similar is usually added to the SSID, so we know that that
+                        is
+                        the extender</li>
+                </details>
+
+                <!-- Mesh Networks -->
+                <details>
+                    <summary><i>Mesh Networks</i></summary>
+                    <p>Networks that don’t have a single access point – instead, many wireless “nodes” that
+                        communicate
+                        with each other are spread throughout the location. Those networks are known to be
+                        problematic
+                        with IoT devices, including the ecobee.</p>
+                    <p>The main symptom would be frequent disconnections.</p>
+                    <p>Examples:</p>
+                    <li>Google Wi-Fi</li>
+                    <li>Ubiquiti</li>
+                    <li>Eero</li>
+                    <li>TP-Link Deco</li>
+                    <li>Linksys Velop</li>
+                    <li>Netgear Orbi</li>
+                    <li>Asus ZenWiFi</li>
+                </details>
+            </details>
+
+
+            <!-- SELECT Wi-Fi TERMINOLOGY -->
+            <details class="titles">
+                <summary>
+                    <h1>select wi-fi network</h1>
+                </summary>
+
+                <!-- Automatic Config -->
+                <details>
+                    <summary><i>Automatic Config</i></summary>
+                    <p>Is initially available when the customers are prompted for their network and password.</p>
+                </details>
+
+                <!-- Manual Config w/ DHCP & Manual Config w/ Static IP -->
+                <details>
+                    <summary><i>Manual Config w/ DHCP & Manual Config w/ Static IP</i></summary>
+                    <p>Can only be found after the ecobee pulls up an error message and the option for Manually
+                        Configure comes up on the thermostat (along with Retry Password).
+
+                    </p>
+                </details>
+            </details>
+
+
+            <!-- UI FLOWS - LEVEL 1 -->
+            <details class="titles">
+                <summary>
+                    <h1>ui flows - level 1</h1>
+                </summary>
+
+                <!-- Automatic Configuration -->
+                <details>
+                    <summary><i>Automatic Configuration</i></summary>
+                    <li>SSID selected from the list</li>
+                    <li>Password manually entered</li>
+                    <li>Uses WPA2 encryption</li>
+                    <li>Uses DHCP, so no other info is required</li>
+                </details>
+
+                <details>
+                    <summary><i>WAC (Wireless Accessory Configuration) OR iOS Method</i></summary>
+                    <li>Uses an iOS device as a bridge between ecobee and Wi-Fi</li>
+                    <li>User doesn’t need to enter a password on the ecobee
+
+                    </li>
+                </details>
+            </details>
+
+            <!-- NETWORK TOPOLOGY -->
+            <details class="titles">
+                <summary>
+                    <h1>network topology</h1>
+                </summary>
+
+                <!-- network top content -->
+                <details>
+                    <!-- summary style="direction: ltr;" keeps text Left-->
+                    <summary style="direction: ltr;">
+                        <p>This is the directional journey a temperature command (for example) takes before reaching
+                            the ecobee successfully to make the change.</p>
+                        <li>ecobee app >> router >> firewall >> ISP >>
+                            ecobee servers
+                            and back again, through the
+                            ISP >> firewall >> router >> and finally to the ecobee</li><br>
+                        <p>What about if you give a voice command through Alexa?</p>
+                        <li>This time we would go from the ecobee >> router >> firewall
+                            >> ISP >> ecobee Server >>
+                            back to ISP >> Alexa/Amazon Server >> back to the ISP >> firewall >> router >> to change
+                            the ecobee</li><br>
+                        <!-- insert image -->
+                        <img src="/Images/rtaImage.png" alt="Network Topology Image" style="width: 500px;"></img>
+                    </summary>
+                </details>
+        </div>
+
+
+        <!-- ******************************************************************************** -->
+
+        <!-- ******* ALL CONTENT FLOAT RIGHT ****** -->
+        <div class="content_floatRight">
+            <!-- <h2>Wi-Fi Troubleshooting</h2> -->
+            <p>Please select the "Common Scenario" that closest relates to Smart Owners issue:</p>
+
+            <!-- START OF "FORM" THAT ENTAILS TERMINOLOGY/TERM NAMES that onclick downdown thier content to reveal content and links/btn's within -->
+            <div class="forms">
+                <div class="btnSelection">
+                    <!-- Connected to router: No -->
+                    <button class="btns-right" id="notConnectToRouter">
+                        <a class="not.ConnectToRouter" href="">Connected to
+                            Router: <b>No</b></a>
+                    </button><br>
+
+                    <!-- Connected to router: Yes; Ping Gateway: Fails -->
+                    <button class="btns-right" id="routerYesGatewayNo">
+                        <a class="router.YesGatewayNo" href="">Connected
+                            to
+                            Router: <b>Yes;</b><br>Ping Gateway: <b>Fails</b></a></button><br>
+
+                    <!-- Connected to router Yes; Ping Gateway: Successful; Connected to ecobee.com: No -->
+                    <button class="btns-right" id="routerYesGatewayYesEcobeeNo">
+                        <a class="router.YesGatewayYesEcobeeNo" href="">Connected
+                            to Router: <b>Yes</b><br>Ping Gateway: <b>Yes</b><br>Connected to ecobee.com:
+                            <b>No</b></button><br>
+
+                    <!-- Frequent Disconnections -->
+                    <button class="btns-right" id="freqDisconnections">
+                        <a class="freq.disconnections" href="">Frequent
+                            Disconnections: <b>Yes</b></a>
+                    </button><br>
+
+                    <!-- Error Messages -->
+                    <button class="btns-right" id="errorMessages">
+                        <a class="error.Messages" href="">Error
+                            Messages</a>
+                    </button><br>
+
+                    <!-- MAC Address is all zeros -->
+                    <button class="btns-right" id="macAllZeros">
+                        <a class="mac.AllZeros" href="">MAC
+                            Address is all Zeros</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ******************************************************************************** -->
+
+
+
+
+</body>
+
+</html>
